@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для записи марок</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Запись марок</h2>
+    <form id="stamp-form">
+        <div class="form-group">
+            <label for="country">Страна:</label>
+            <input type="text" id="country" name="country" required>
+        </div>
+
+        <div class="form-group">
+            <label for="year">Год:</label>
+            <input type="number" id="year" name="year" required>
+        </div>
+
+        <div class="form-group">
+            <label for="type">Вид:</label>
+            <input type="text" id="type" name="type" required>
+        </div>
+
+        <input type="submit" value="Сохранить">
+    </form>
+</div>
+
+</body>
+</html>
