@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список Марок</title>
+</head>
+<body>
+<h1>Список Марок</h1>
+
+<ul>
+
+{% for Mark in Marks %}
+
+<li>{{ Mark.Country }} - "{{ Mark.View }}" ({{ Mark.Year }}, {{ Mark.Image }} pages)</li>
+
+{% endfor %}
+
+</ul>
+</body>
+</html>
